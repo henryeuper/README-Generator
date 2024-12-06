@@ -2,8 +2,7 @@
 // TODO: Include packages needed for this application
 const inquirer = requrire('inquirer')
 const fs = require('fs')
-const generatemarkdown = require('./utils/generatemarkdown');
-const { default: generateMarkdown } = require('./utils/generatemarkdown');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 
 // TODO: Create an array of questions for user input
@@ -20,22 +19,22 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'Installation Instructions',
+        name: 'Installation',
         message: 'Create Instalation Instructions',
     },
     {
         type: 'input',
-        name: 'Usage Guide',
+        name: 'Usage',
         message: 'Create Usage Guide',
     },
     {
         type: 'input',
-        name: 'Contribution Guidelines',
+        name: 'Contribution',
         message: 'Create Contribution Guidelines',
     },
     {
         type: 'input',
-        name: 'Test Instructions',
+        name: 'Test',
         message: 'Create Test Instructions',
     }
 ];
